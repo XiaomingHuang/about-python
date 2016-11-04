@@ -4,9 +4,6 @@ Tornado is a Python web framework and asynchronous networking library, originall
 
 译：Tornado是一个轻量级的python框架，可编写强大的，可扩展的Web服务器，也能被用在大量的应用和工具中。
 
-Documentation and links to additional resources are available at
-http://www.tornadoweb.org
-
 ## Hello, world
 
 Here is a simple "Hello, world" example web app for Tornado:
