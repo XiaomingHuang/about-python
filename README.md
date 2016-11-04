@@ -5,11 +5,11 @@ Tornado is a Python web framework and asynchronous networking library, originall
 译：Tornado是一个轻量级的python框架，可编写强大的，可扩展的Web服务器，也能被用在大量的应用和工具中。
 ## Install Tornado
 
-#### pip安装
+#### Pip安装
 ```
     $ pip install tornado
 ```
-#### 或Github源码编译安装
+#### Github源码编译安装
 ```
     $ curl -L -O https://github.com/facebook/tornado/archive/v3.1.0.tar.gz
     $ tar xvzf v3.1.0.tar.gz
