@@ -9,7 +9,7 @@ Tornado is a Python web framework and asynchronous networking library, originall
 ```
     $ pip install tornado
 ```
-#### Github源码编译安装
+#### 或Github源码编译安装
 ```
     $ curl -L -O https://github.com/facebook/tornado/archive/v3.1.0.tar.gz
     $ tar xvzf v3.1.0.tar.gz
