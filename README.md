@@ -56,5 +56,7 @@ Tornado is a Python web framework and asynchronous networking library, originall
 ```
 
 ## License
+
 [MIT](http://opensource.org/licenses/MIT)
 
+Copyright (c) 2016 xiaoming
