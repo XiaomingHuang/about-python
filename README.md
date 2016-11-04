@@ -4,28 +4,31 @@ Tornado is a Python web framework and asynchronous networking library, originall
 
 译：Tornado是一个轻量级的python框架，可编写强大的，可扩展的Web服务器，也能被用在大量的应用和工具中。
 
-## Hello, world
+## Hello Tornado
+创建你的第一个Tornado应用<br />
+hello.py
 
-Here is a simple "Hello, world" example web app for Tornado:
 ```python
+    import tornado.httpserver
     import tornado.ioloop
+    import tornado.options
     import tornado.web
 
-    class MainHandler(tornado.web.RequestHandler):
-        def get(self):
-            self.write("Hello, world")
+    from tornado.options import define, options
+    define("port", default=8000, help="run on the given port", type=int)
 
-    def make_app():
-        return tornado.web.Application([
-            (r"/", MainHandler),
-        ])
+    class IndexHandler(tornado.web.RequestHandler):
+        def get(self):
+            self.write('Hello Tornado!')
 
     if __name__ == "__main__":
-        app = make_app()
-        app.listen(8888)
-        tornado.ioloop.IOLoop.current().start()
+        tornado.options.parse_command_line()
+        app = tornado.web.Application(handlers=[(r"/", IndexHandler)])
+        http_server = tornado.httpserver.HTTPServer(app)
+        http_server.listen(options.port)
+        tornado.ioloop.IOLoop.instance().start()
 ```
-This example does not use any of Tornado's asynchronous features;
+
 
 
 
