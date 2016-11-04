@@ -6,7 +6,7 @@ Tornado is a Python web framework and asynchronous networking library, originall
 
 ## Hello Tornado
 
-1.  创建你的第一个Tornado应用，hello.py:
+#### 创建你的第一个Tornado应用，hello.py:
 
 ```python
     import tornado.httpserver
@@ -29,13 +29,13 @@ Tornado is a Python web framework and asynchronous networking library, originall
         tornado.ioloop.IOLoop.instance().start()
 ```
 
-2.  命令行运行程序:
+#### 命令行运行程序:
 
 ```
     $ python hello.py --port=8000
 ```
 
-3.  在浏览器中打开http://localhost:8000，或者打开另一个终端窗口使用curl测试我们的应用：
+#### 在浏览器中打开http://localhost:8000，或者打开另一个终端窗口使用curl测试我们的应用：
 
 ```
     $ curl http://localhost:8000/
