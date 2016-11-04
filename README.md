@@ -1,24 +1,13 @@
 # about-tornado
 
-==================
+Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.
 
-.. image:: https://badges.gitter.im/Join%20Chat.svg
-   :alt: Join the chat at https://gitter.im/tornadoweb/tornado
-   :target: https://gitter.im/tornadoweb/tornado?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+译：Tornado是一个轻量级的python框架，可编写强大的，可扩展的Web服务器，也能被用在大量的应用和工具中。
 
-`Tornado <http://www.tornadoweb.org>`_ is a Python web framework and
-asynchronous networking library, originally developed at `FriendFeed
-<http://friendfeed.com>`_.  By using non-blocking network I/O, Tornado
-can scale to tens of thousands of open connections, making it ideal for
-`long polling <http://en.wikipedia.org/wiki/Push_technology#Long_Polling>`_,
-`WebSockets <http://en.wikipedia.org/wiki/WebSocket>`_, and other
-applications that require a long-lived connection to each user.
+Documentation and links to additional resources are available at
+http://www.tornadoweb.org
 
-[Tornado](http://www.tornadoweb.org) 是一个轻量级的python框架，可编写强大的，可扩展的Web服务器，也能被用在大量的应用和工具中。
-
-
-Hello, world
-------------
+## Hello, world
 
 Here is a simple "Hello, world" example web app for Tornado:
 
@@ -45,10 +34,7 @@ This example does not use any of Tornado's asynchronous features; for
 that see this `simple chat room
 <https://github.com/tornadoweb/tornado/tree/stable/demos/chat>`_.
 
-Documentation
--------------
 
-Documentation and links to additional resources are available at
-http://www.tornadoweb.org
+
 
 
